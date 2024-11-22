@@ -1,0 +1,16 @@
+// The heart service definition.
+service Greeter {
+  // Sends a greeting
+  rpc GetHeartStream (HeartRequest) returns (stream HeartReply) {}
+}
+
+// The request message containing the user's name.
+message HeartRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message HeartReply {
+  int32 pointx = 1;
+  int32 pointy = 2;
+}
