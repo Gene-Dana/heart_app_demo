@@ -6,11 +6,11 @@ service Greeter {
 
 // The request message containing the user's name.
 message HeartRequest {
-  string name = 1;
+  optional string name = 1;
 }
 
 // The response message containing the greetings
 message HeartReply {
-  int32 pointx = 1;
-  int32 pointy = 2;
+  required int32 pointx = 1;
+  required int32 pointy = 2;
 }
